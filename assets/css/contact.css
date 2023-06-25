@@ -1,4 +1,6 @@
-*{
+  /* General  */
+
+  *{
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
@@ -13,26 +15,16 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --transition-speed: 600ms;
+    --max-width: 1280px;
+    --min-width: 320px;
+    --accent-color: #4bd2ff;
   }
-  a:hover {
-    color: #4bd2ff;
-  }
+
   
   .hide {
     display: none;
   }
-  
-  /* General  */
-  :root {
-    --max-width: 1280px;
-    --min-width: 320px;
-    --accent-color: #00c2ff;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
+     
   html,
   body {
     height: 100%;
@@ -47,13 +39,11 @@
     text-decoration: none;
     color: white;
   }
-  
-  .book-appointment {
-    background-color: var(--accent-color);
-    padding: 1rem 2rem;
-    font-size: 24px;
-    border-radius:10px;
+
+  a:hover {
+    color: var(--accent-color);
   }
+  
   
   /* Container */
   .container {
@@ -106,6 +96,35 @@
     margin-right: 0;
   }
   
+  
+.dropdown {
+  display: inline-block;
+  position: relative;
+  margin: 0 0.5rem;
+  font-size: 24px;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position:fixed;
+
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: var(--text-secondary);
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: var(--accent-color);
+}
+
+
    
     /* Content */
 
